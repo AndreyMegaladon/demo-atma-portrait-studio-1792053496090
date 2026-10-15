@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ātma Portrait Studio - Termin buchen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans">
+    <header class="sticky top-0 z-50 backdrop-blur bg-white/80 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold">Ātma Portrait Studio</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100">Startseite</a>
+                    <a href="about.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100">Über uns</a>
+                    <a href="services.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100">Menü</a>
+                    <a href="gallery.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100">Galerie</a>
+                    <a href="booking.html" class="px-3 py-2 rounded-md text-sm font-medium bg-amber-500 text-white">Termin buchen</a>
+                    <a href="contacts.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <nav class="bg-gray-50 py-2 px-4 sm:px-6 lg:px-8 text-sm text-gray-600 max-w-7xl mx-auto">
+        Главная > Меню > Termin buchen
+    </nav>
+    <main class="max-w-3xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-extrabold mb-8 text-center">Termin online buchen</h1>
+        <form action="https://formsubmit.co/info@atmaportrait.com" method="POST" class="border rounded-xl p-8 shadow-lg space-y-6 bg-gray-50">
+            <div>
+                <label class="block font-medium mb-2">Vollständiger Name</label>
+                <input type="text" name="name" required class="w-full border rounded-lg p-3 bg-white">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block font-medium mb-2">Telefonnummer</label>
+                    <input type="tel" name="phone" required class="w-full border rounded-lg p-3 bg-white">
+                </div>
+                <div>
+                    <label class="block font-medium mb-2">E-Mail-Adresse</label>
+                    <input type="email" name="email" required class="w-full border rounded-lg p-3 bg-white">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block font-medium mb-2">Datum</label>
+                    <input type="date" name="date" required class="w-full border rounded-lg p-3 bg-white">
+                </div>
+                <div>
+                    <label class="block font-medium mb-2">Uhrzeit</label>
+                    <input type="time" name="time" required class="w-full border rounded-lg p-3 bg-white">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block font-medium mb-2">Anzahl der Gäste</label>
+                    <input type="number" name="guests" min="1" max="10" value="1" required class="w-full border rounded-lg p-3 bg-white">
+                </div>
+                <div>
+                    <label class="block font-medium mb-2">Gewünschte Leistung</label>
+                    <select name="service" class="w-full border rounded-lg p-3 bg-white">
+                        <option value="Quick Headshot Session">Quick Headshot Session (49 €)</option>
+                        <option value="Standard Private Session">Standard Private Session (89 €)</option>
+                        <option value="Extended Creative Session">Extended Creative Session (149 €)</option>
+                        <option value="Studio Rental">Studio Rental (249 €)</option>
+                        <option value="Flower Crown Workshop">Flower Crown Workshop (ab 65 €)</option>
+                        <option value="Self-Photography & Flower Collage">Self-Photography & Flower Collage (ab 99 €)</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label class="block font-medium mb-2">Kommentar / Wünsche</label>
+                <textarea name="comment" rows="4" class="w-full border rounded-lg p-3 bg-white"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-amber-500 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-amber-600 transition duration-300">Verbindlich anfragen</button>
+        </form>
+    </main>
+    <footer class="bg-black text-white py-8 text-center">
+        <p>&copy; 2024 Ātma Portrait Studio. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
